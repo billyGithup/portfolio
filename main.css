@@ -1,0 +1,313 @@
+body {
+  font-family: 'Kalam', cursive;
+  position: relative;
+  background: #f1fffa;
+}
+
+/*#########navbar##############*/
+
+.navbar {
+  background: #242424!important;
+  padding: 10px 20px!important;
+  transition: padding 2s ease;
+}
+
+.navbar-background {
+  padding: 2px 20px!important
+}
+
+.navbar-brand {
+  color: #2a9134;
+  border: 3px solid #2a9134;
+  font-size: 30px;
+  transition: all 2s;
+}
+
+.navbar-brand:hover {
+  background: #2a9134;
+  color: #242424;
+}
+
+.navbar-toggler {
+  border: 3px solid #2a9134;
+  padding: 3px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  background: #2a9134;
+  transition: all 0.5s ease;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -8px);
+}
+.nav-link {
+  color: #f1fffa;
+  font-size: 25px;
+  padding: 10px 20px!important;
+  border-radius: 5px;
+  transition: background 2s ease;
+}
+
+.nav-link:hover {
+  background: #2a9134;
+  color: #f1fffa;
+
+}
+
+.nav-active {
+  color: #f1fffa;
+  font-size: 25px;
+  padding: 10px 20px!important;
+  border-radius: 5px;
+  background: rgba(42, 145, 52, 0.6);
+  transition: background 2s ease;
+}
+
+.nav-active:hover {
+  background: #2a9134;
+}
+
+.search-btn {
+  background: #2a9134;
+  transition: all 1s ease;
+}
+
+.search-btn:hover {
+  color: #2a9134;
+  background: #191919;
+}
+
+/*#################banner##############*/
+
+.item-1,
+.item-2,
+.item-3 {
+  min-height: 75vh;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+}
+
+
+.item-1 {
+  background: linear-gradient(to right, rgba(42, 145, 52, 0.9), rgba(42, 145, 52, 0.5)), url(img/banner-1.jpeg)center/cover fixed no-repeat;
+}
+
+.item-2 {
+  background: linear-gradient(to right, rgba(42, 145, 52, 0.9), rgba(42, 145, 52, 0.5)), url(img/banner-2.jpeg) center/cover fixed no-repeat;
+}
+
+.item-3 {
+  background: linear-gradient(to right, rgba(42, 145, 52, 0.9), rgba(42, 145, 52, 0.5)), url(img/banner-3.jpeg) center/cover fixed no-repeat;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+/*###################title#########*/
+
+.title h1 {
+  color: #242424;
+}
+
+.title h3 {
+  color: #5a5a5a;
+}
+
+.title-underline {
+  height: 5px;
+  width: 250px;
+  background: #2a9134;
+  margin: -28px auto;
+}
+
+.title a {
+  color: #2a9134;
+  font-size: 30px;
+  padding: 0px 10px;
+  display: inline-block;
+  background: #f1fffa;
+
+}
+
+/*###########skills##################*/
+
+.skills-icon {
+  background: #242424;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+  transition: all 1s ease;
+
+}
+
+.skills-icon:hover {
+  background: #2a9134;
+}
+
+
+.skills-icon span {
+  font-size: 100px;
+  color: #909090;
+  transition: all 1s ease-in-out;
+}
+
+.skills-icon:hover span {
+  color: #f1fffa;
+}
+
+/*###########about############*/
+
+#about .title a {
+  background: #f1fffa;
+}
+
+
+#about {
+  min-height: 40vh;
+}
+
+/*##############banner###############*/
+
+#banner {
+  min-height: 50vh;
+  background: linear-gradient(rgba(42, 145, 52, 0.5), rgba(42, 145, 52, 0.5)), url(img/video-filler.jpeg)center/cover fixed no-repeat;
+}
+
+/*******************posts************************/
+#posts {
+  background: lightgray;
+}
+
+#posts a {
+  background: lightgray;
+}
+
+#posts .card {
+  background: transparent!important;
+  border: none;
+}
+
+#posts .card-img-top {
+  border-radius: 0!important;
+}
+
+#posts .card-footer {
+  background: transparent;
+
+}
+
+.post-link {
+  color: #2a9134;
+  transition: all 1s ease-in-out;
+}
+
+.post-link:hover {
+  color: #dd0000;
+  text-decoration: none;
+
+}
+
+/*############values##############*/
+
+.value {
+  position: relative;
+}
+
+#values .values-container {
+  margin-top: 100px;
+}
+
+.value-icon {
+  font-size: 60px;
+  color: #f1fffa;
+  background: #242424;
+  padding: 25px 35px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: all 2s ease;
+
+}
+
+.value-number {
+  padding: 15px;
+  background: #2a9134;
+  position: absolute;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 20px;
+  top: -12%;
+  left: 57%;
+  transition: all 2s ease;
+  color: #242424;
+}
+
+.value:hover .value-icon {
+  background: #2a9134;
+  transform: scale(1.2);
+}
+
+.value:hover .value-number {
+  background: #242424;
+  color: #f1fffa;
+  transform: scale(0.9);
+}
+
+/***************experience******************/
+#experience {
+  background: azure;
+  margin-bottom: 60px;
+}
+
+.job-description {
+  font-size: large;
+}
+
+.workplace {
+  color: lightcoral;
+}
+
+#picture-poster {
+  min-height: 50vh;
+  background: url(img/workplace.jpg)center/cover fixed no-repeat;
+}
+
+/*##########contact##########################*/
+#contact {
+  min-height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/contact.jpg)center/cover fixed no-repeat;
+  clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0 100%)
+}
+
+#contact h1 {
+  color: red;
+}
+
+#conact-content {
+  margin-top: 70px;
+}
+
+.contact-info h4{
+  font-size: 2em;
+  color: #f1fffa;
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.contact-icon {
+  font-size: 35px;
+  color: lime;
+}
